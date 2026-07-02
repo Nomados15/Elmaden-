@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ELMADEN - Premium Glassmorphic</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- الميزة الجديدة: شاشة التحميل الترحيبية الذكية للـ Logo -->
+    <div id="splash-screen">
+        <div class="splash-logo-container">
+            <img src="logo.png" alt="ELMADEN" class="splash-logo" id="splash-logo-target">
+            <h1 class="splash-text">EL<span class="gold-text">MADEN</span></h1>
+        </div>
+    </div>
+
+    <!-- جزيئات الإضاءة الخلفية الديناميكية (Neon Blurs) -->
+    <div class="bg-glow glow-1"></div>
+    <div class="bg-glow glow-2"></div>
+    <div class="bg-glow glow-3"></div>
+
+    <!-- شريط التنقل الزجاجي المعزول -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#accueil" class="nav-logo" id="nav-logo-destination">
+                <!-- سيتم نقل الشعار إلى هنا برمجياً بعد انتهاء أثر الـ Splash -->
+                <span class="logo-placeholder"></span>
+                <span class="brand-name">EL<span class="gold-text">MADEN</span></span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#accueil" class="nav-item active">Accueil</a></li>
+                <li><a href="#apropos" class="nav-item">À Propos</a></li>
+                <li><a href="#realisations" class="nav-item">Réalisations</a></li>
+                <li><a href="#contact" class="nav-item">Contact</a></li>
+            </ul>
+            <div class="menu-toggle" id="mobileMenu">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- الواجهة الرئيسية للموقع (Hero Section) -->
+    <header id="accueil" class="hero-section">
+        <div class="hero-content reveal-up">
+            <span class="hero-tag"><i class="fa-solid fa-layer-group"></i> A Z U L @elmaden </span>
+            <h1>Solidarité & Action <br><span class="glossy-text">Pour El Maden</span></h1>
+            <p>Association Sociale El Maden | Tala-bouzrou, Makouda, Tizi-Ouzou</p>
+            <div class="hero-buttons">
+                <a href="#realisations" class="btn btn-glossy-gold"><i class="fa-solid fa-wand-magic-sparkles"></i> Nos Actions</a>
+                <a href="#contact" class="btn btn-glass">Contact Réseau</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- قسم التعريف بالجمعية -->
+    <section id="apropos" class="section-padding">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <h2 class="section-title">À Propos de Nous</h2>
+            </div>
+            
+            <div class="about-grid">
+                <div class="glass-card reveal-left">
+                    <div class="glossy-shine"></div>
+                    <div class="card-icon-box"><i class="fa-solid fa-eye"></i></div>
+                    <h3>Notre Vision & Mission</h3>
+                    <p>L'Association Sociale El Maden œuvre activement pour le développement social, culturel et solidaire de notre communauté à El Maden.
+                    El Maden est bien plus qu’une association : c’est un souffle de vie, un lien tissé entre les habitants du village d’El Maden (commune de Makouda, Tizi‑Ouzou) et tous ceux qui croient en une Algérie solidaire, ancrée dans ses racines et tournée vers l’avenir.</p>
+                </div>
+                
+                <div class="glass-card reveal-right">
+                    <div class="glossy-shine"></div>
+                    <div class="card-icon-box"><i class="fa-solid fa-bullhorn"></i></div>
+                    <h3>Engagement Continu</h3>
+                    <p>Cette plateforme met en lumière l'engagement des citoyens et des bénévoles pour l'épanouissement du village.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ميزة العدادات الذكية الفاخرة (Glass Statistics) -->
+    <section class="section-padding stats-section">
+        <div class="container">
+            <div class="counters-container reveal-up">
+                <div class="counter-box">
+                    <i class="fa-solid fa-user-group counter-icon"></i>
+                    <div class="counter" data-target="150">0</div>
+                    <p>Volontaires</p>
+                </div>
+                <div class="counter-box">
+                    <i class="fa-solid fa-diagram-project counter-icon"></i>
+                    <div class="counter" data-target="45">0</div>
+                    <p>Projets Réalisés</p>
+                </div>
+                <div class="counter-box">
+                    <i class="fa-solid fa-handholding-heart counter-icon"></i>
+                    <div class="counter" data-target="1200">0</div>
+                    <p>Bénéficiaires</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم الإنجازات والبطاقات مع محددات التقدم الأنيقة (Glossy Native Progress Meters) -->
+    <section id="realisations" class="section-padding">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <h2 class="section-title">Nos Réalisations</h2>
+            </div>
+
+            <div class="cards-grid">
+                
+                <!-- بطاقة 1: يناير -->
+                <div class="glass-card achievement-card reveal-up" data-id="action_1">
+                    <div class="glossy-shine"></div>
+                    <div class="card-img-wrapper">
+                        <img src="Image1.jpeg" alt="Yennayer">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-date"><i class="fa-regular fa-calendar"></i> Janvier 2025</span>
+                        <h3>Nouvel An Amazigh (Yennayer 2976)</h3>
+                        <p>Organisation d’une fête conviviale (waâda) au village d’El Maden.</p>
+                        
+                        <!-- Premium Glossy Native Progress Meter -->
+                        <div class="progress-container">
+                            <div class="progress-label"><span>Statut: Complété</span><span>100%</span></div>
+                            <progress value="100" max="100"></progress>
+                        </div>
+
+                        <div class="card-actions">
+                            <button class="btn-like"><i class="fa-regular fa-heart"></i> <span class="like-count">0</span></button>
+                            <button class="btn-share" data-title="Yennayer" data-text="Célébration du Nouvel An Amazigh"><i class="fa-solid fa-share-nodes"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- بطاقة 2: حملة التوعية -->
+                <div class="glass-card achievement-card reveal-up" data-id="action_2">
+                    <div class="glossy-shine"></div>
+                    <div class="card-img-wrapper">
+                        <img src="Image2.jpeg" alt="Dépistage">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-date"><i class="fa-regular fa-calendar"></i> Juillet 2025</span>
+                        <h3>Campagne de dépistage du cancer</h3>
+                        <p>Sensibilisation et prévention en partenariat avec l’EPSP Ouagnoune.</p>
+                        
+                        <div class="progress-container">
+                            <div class="progress-label"><span>Impact Communautaire</span><span>85%</span></div>
+                            <progress value="85" max="100"></progress>
+                        </div>
+
+                        <div class="card-actions">
+                            <button class="btn-like"><i class="fa-regular fa-heart"></i> <span class="like-count">0</span></button>
+                            <button class="btn-share" data-title="Dépistage" data-text="Campagne de dépistage gratuit"><i class="fa-solid fa-share-nodes"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- بطاقة 3: الرحلة العائلية -->
+                <div class="glass-card achievement-card reveal-up" data-id="action_3">
+                    <div class="glossy-shine"></div>
+                    <div class="card-img-wrapper">
+                        <img src="Image3.jpeg" alt="Excursion">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-date"><i class="fa-regular fa-calendar"></i> Juillet 2025</span>
+                        <h3>Excursion familiale à Béjaïa</h3>
+                        <p>Sortie récréative au profit des familles du village d'El Maden.</p>
+                        
+                        <div class="progress-container">
+                            <div class="progress-label"><span>Taux de Participation</span><span>95%</span></div>
+                            <progress value="95" max="100"></progress>
+                        </div>
+
+                        <div class="card-actions">
+                            <button class="btn-like"><i class="fa-regular fa-heart"></i> <span class="like-count">0</span></button>
+                            <button class="btn-share" data-title="Excursion" data-text="Excursion familiale à Béjaïa"><i class="fa-solid fa-share-nodes"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- بطاقة 4: نصب الشهداء -->
+                <div class="glass-card achievement-card reveal-up" data-id="action_4">
+                    <div class="glossy-shine"></div>
+                    <div class="card-img-wrapper">
+                        <img src="Image4.jpeg" alt="Monument">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-date"><i class="fa-regular fa-calendar"></i> Juillet 2025</span>
+                        <h3>Monument des martyrs</h3>
+                        <p>Inauguration officielle à la placette en hommage aux combattants.</p>
+                        
+                        <div class="progress-container">
+                            <div class="progress-label"><span>Finition Travaux</span><span>100%</span></div>
+                            <progress value="100" max="100"></progress>
+                        </div>
+
+                        <div class="card-actions">
+                            <button class="btn-like"><i class="fa-regular fa-heart"></i> <span class="like-count">0</span></button>
+                            <button class="btn-share" data-title="Monument" data-text="Inauguration du monument des martyrs"><i class="fa-solid fa-share-nodes"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- بطاقة 5: عائلة عباس -->
+                <div class="glass-card achievement-card reveal-up" data-id="action_5">
+                    <div class="glossy-shine"></div>
+                    <div class="card-img-wrapper">
+                        <img src="Image5.jpeg" alt="Hommage Abbas">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-date"><i class="fa-regular fa-calendar"></i> Octobre 2024</span>
+                        <h3>Hommage à la famille Abbas</h3>
+                        <p>Forum mémoriel honorant cinq frères Abbas tombés pour la liberté.</p>
+                        
+                        <div class="progress-container">
+                            <div class="progress-label"><span>Couverture Historique</span><span>90%</span></div>
+                            <progress value="90" max="100"></progress>
+                        </div>
+
+                        <div class="card-actions">
+                            <button class="btn-like"><i class="fa-regular fa-heart"></i> <span class="like-count">0</span></button>
+                            <button class="btn-share" data-title="Hommage Abbas" data-text="Forum mémoriel famille Abbas"><i class="fa-solid fa-share-nodes"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- بطاقة 6: العمل التطوعي النسائي -->
+                <div class="glass-card achievement-card reveal-up" data-id="action_6">
+                    <div class="glossy-shine"></div>
+                    <div class="card-img-wrapper">
+                        <img src="Image6.jpeg" alt="Bénévolat">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-date"><i class="fa-regular fa-clock"></i> En Continu</span>
+                        <h3>Bénévolat féminin</h3>
+                        <p>Valorisation et remerciements publics aux femmes actives du village.</p>
+                        
+                        <div class="progress-container">
+                            <div class="progress-label"><span>Présence Terrain</span><span>75%</span></div>
+                            <progress value="75" max="100"></progress>
+                        </div>
+
+                        <div class="card-actions">
+                            <button class="btn-like"><i class="fa-regular fa-heart"></i> <span class="like-count">0</span></button>
+                            <button class="btn-share" data-title="Bénévolat" data-text="Valorisation du bénévolat féminin"><i class="fa-solid fa-share-nodes"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم الاتصال الشفاف الفاخر -->
+    <section id="contact" class="section-padding">
+        <div class="container">
+            <div class="glass-card contact-card reveal-up">
+                <div class="glossy-shine"></div>
+                <h3>Association Sociale El Maden</h3>
+                <div class="info-link-box">
+                    <p><i class="fa-solid fa-location-dot gold-text"></i> Tala-bouzrou, Makouda, Tizi-Ouzou, Algérie</p>
+                    <p><i class="fa-solid fa-envelope gold-text"></i> contact@elmaden.org</p>
+                </div>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/rayaneabbas5518" target="_blank" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- التذييل الزجاجي السفلي للموقع -->
+    <footer class="main-footer">
+        <p>&copy; 2026 Association Sociale El Maden. Design Premium Glassmorphic @by-Numidien.</p>
+    </footer>
+
+    <script src="javascript.js"></script>
+</body>
+</html>
